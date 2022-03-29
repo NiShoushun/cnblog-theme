@@ -444,6 +444,37 @@ p.article-info-text > .postMeta br {
     margin-left: 5px;
     transition: color 0.15s ease-in-out
 }
+
+#cnblogs_post_body h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#cnblogs_post_body h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: rgba(99, 30, 12, 0.904);
+}
+#cnblogs_post_body h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(168, 104, 7, 0.897);
+    margin: 10px 0;
+}
+#cnblogs_post_body h5 {
+    font-size: 19px;
+    font-weight: bold;
+    color: rgba(11, 46, 97, 0.925);
+    margin: 10px 0;
+}
+#cnblogs_post_body h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(25, 116, 221, 0.925);
+    margin: 10px 0;
+}
+
 p.article-info-text > .postMeta {
     font-size: 16px;
     font-weight: 700;
@@ -2339,21 +2370,23 @@ div#tbCommentBodyPreview {
     color: #B8B8B8;
     line-height: 20px
 }
-#cnblogs_post_body h6,
+
 blockquote {
-    border-left: 3px solid rgba(84, 104, 255, .8) !important;
+    border-left: 3px solid rgba(9, 131, 231, 0.8) !important;
     border-right: none !important;
     border-top: none !important;
     border-bottom: none !important;
     padding: 15px !important;
-    background-color: #f7f7f7 !important;
-    background-image: linear-gradient(180deg ,#fff,#f5f5fa) !important;
+    background-color: #c2c2c218 !important;
+    background-image: linear-gradient(180deg ,rgba(209, 209, 209, 0.048),#f5f5fa) !important;
     --text-opacity: 1 !important;
-    color: #484c7a !important;
-    box-shadow: 0 4px 11px 0 rgb(37 44 97 / 9%), 0 1px 3px 0 rgb(93 100 148 / 6%) !important;
+    color: #04071b !important;
+    box-shadow: 0 2px 4px 0 rgba(9, 11, 26, 0.158), 0 1px 3px 0 rgba(17, 17, 20, 0.11) !important;
     margin: 10px 5px 10px 0 !important;
     font-size: 14px;
-    font-weight: 400
+    font-weight: 400;
+    border-radius: 4px;
+
 }
 blockquote p {
     margin: 0 !important;
@@ -2787,17 +2820,26 @@ pre {
     width: 100%;
     z-index: 998
 }
-#home code:not([class]),
+#home code:not([class]){
+    font-size:14px;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    box-shadow:1px 1px rgba(0, 0, 0, 0.171);
+    color: #cf2a56;
+}
+
 span.cnblogs_code {
     border: 0;
-    padding: 2px 4px;
-    color: #D83B64;
+    padding:1px 2px;
+    color: #862740;
     display: inline;
     background-color: #f9f2f4;
     border-radius: 3px;
     position: relative;
     bottom: 1px;
-    font-weight: 700
+    font-weight: 700;
+ 
 }
 .cnblogs_code {
     line-height: 20px;
